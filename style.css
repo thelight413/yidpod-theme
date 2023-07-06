@@ -1,0 +1,89 @@
+/*
+Theme Name: Divi Child Theme
+Theme URI: https://divireadythemes.com/
+Description: Divi Child Theme
+Author: Divi Ready Themes
+Author URI: https://divireadythemes.com/
+Template: Divi
+Version: Updated for Divi 3+
+*/
+
+
+
+/*------------------------------------------------*/
+/*-------------------[GENERAL]--------------------*/
+/*------------------------------------------------*/
+
+
+
+/*------------------------------------------------*/
+/*-----------------[HEADER-MENU]------------------*/
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*------------------[HOMEPAGE]--------------------*/
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*------------------[SUBPAGES]--------------------*/
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*-------------------[Footer]---------------------*/
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*--------------------[RWD]-----------------------*/
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*--[ADD TUTORIAL CUSTOMIZATION BELOW THIS LINE]--*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+
+
+
+
+#wpcf7-f2994-p2991-o1 input[type=email], #wpcf7-f2994-p2991-o1 input[type=tel], #wpcf7-f2994-p2991-o1 input[type=text], #wpcf7-f2994-p2991-o1 select{
+	height:40px;
+	width: 100%;
+}
+#wpcf7-f2994-p2991-o1 textarea{
+	width: 100%;
+}
+#wpcf7-f2994-p2991-o1 input[type=submit]{
+	background: #4bba6a;
+    color: white;
+    border: 1px solid #4bba6a;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#wpcf7-f2994-p2991-o1 .report-bug {
+    margin-bottom: 30px;
+    display: none;
+}
+body.woocommerce-account #page-container #left-area {
+    width: 80%;
+}
+body.woocommerce-account.et_right_sidebar #main-content .container::before {
+	right: 20% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .woocommerce .woocommerce-form-login .woocommerce-form-login__rememberme {
+        display: block;
+    }
+
+}
+
+/*  add new 2 */

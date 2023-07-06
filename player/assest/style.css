@@ -1,0 +1,232 @@
+/*
+#myProgress {
+  width: 420px;
+   background-color: #d9d9f2; 
+  cursor: pointer;
+  border-radius: 10px;
+}*/
+#myProgress {
+    width: 330px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+}
+/*---new ----*/
+i#icon-play {
+    padding-left: 4px;
+}
+.timer, .duration {
+    /* position: absolute; */
+}
+.timer {
+    left: -46px;
+    top: -13.5px;
+    font-size: 13px;
+    color: #a3a3a3;
+}
+.duration {
+    margin-left: 10px;
+    right: -46px;
+    top: -13.5px;
+    font-size: 13px;
+    color: #a3a3a3;
+}
+/*--- End new ----*/
+#myBar {
+  width: 0%;
+  height: 3px;
+  background-color: #56a331;
+  border-radius: 10px;
+  position: relative;
+}
+.indicator {
+  position: absolute;
+  top: -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #56a331;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.logo {
+  fill: red;
+}
+.btn-action.cs-play-pause {
+    width: auto;
+}
+.btn-action{
+  cursor: pointer;
+  /* padding-top: 10px; */
+  /* width: 30px; */
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infos-ctn{
+padding-top: 5px;
+}
+
+.btn-ctn > div {
+ padding: 5px 10px;
+}
+
+.infos-ctn > div {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 12px;
+}
+.infos-ctn > div.timer {
+    text-align: left;
+    width: 50%;
+}
+.infos-ctn > div.duration {
+    text-align: right;
+    width: 50%;
+}
+.first-btn{
+  /* margin-left: 3px; */
+}
+
+.duration{
+  margin-left: 10px;
+}
+/*
+.title{
+  margin-left: 10px;
+  width: 210px;
+  text-align: center;
+}
+*/
+.player-ctn{
+  /* width: 360px; */
+ 
+}
+
+.playlist-track-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    cursor: pointer;
+    background: #262626;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+	border-bottom: 1.5px solid #706f6f;
+}
+.playlist-track-ctn img {
+  width: 68px;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 68px;
+}
+.playlist-btn-play {
+    width: 10%;
+    text-align: center;
+}
+.playlist-track-ctn:last-child{
+  /*border: 1px solid #fff; */
+}
+
+.playlist-info-track{
+  width: 80%;
+  padding: 0 10px;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #fff;
+  font-size: 14px;
+}
+.playlist-info-track .section__container {
+    color: #b3aeae;
+    font-size: 14px;
+}
+.playlist-info-track .section__container .fa{
+	 color: #b3aeae;
+	  font-size: 14px;
+}
+.playlist-info-track .section__container span {
+    margin-right: 8px;
+}
+.playlist-btn-play .fa-play,.playlist-btn-play .fa-pause {
+    background: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 23px;
+    border-radius: 50px;
+    margin-top: 8px;
+}
+.playlist-ctn {
+    padding-bottom: 20px;
+    height: 49px;
+    overflow: auto;
+    display: none;
+    max-width: 700px;
+    margin-top: 50px;
+}
+.active-track{
+  background: #4d4d4d;
+  color: #fff !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #fff !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.new_playlist .playlist-btn-play,.new_playlist1 .playlist-btn-play{
+  pointer-events: auto;
+}
+.fa{
+  color: #fff;
+  font-size: 20px;
+}
+div#toggleMute {
+    /* margin-top: 25px; */
+	    /* display: inline-block; */
+}
+div#btn-faws-play-pause {
+    width: 40px;
+    background: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+}
+div#btn-faws-play-pause i{
+    color: #3c3c3c;
+	line-height: 40px;
+}
+.share-episode.show .share-links {
+    display: block;
+}
+button.play__btn {
+    background-color: #4bba6a;
+    color: #fff;
+    padding: 15px 55px;
+    border-radius: 28px;
+}
+.single__description_container_inner h2 {
+    color: #fff;
+}
+.btn__container {
+    margin: 25px 0;
+}
+
+#menu-web-player li.active a {
+    color: #4bba6a;
+}
