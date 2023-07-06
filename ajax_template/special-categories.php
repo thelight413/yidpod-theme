@@ -57,7 +57,7 @@ $count = count($checkPodcastArraycount);
 					<div class="podcast_image">
 					<?php echo display_lazy_loaded_podcast_image($id,array(200,200)); ?>
 					</div>
-					<div class="podcast_title" data-id="<?= $id; ?>"><?php echo $title; ?></div>
+					<div class="podcast_title" title="<?php echo $title ?>" data-id="<?= $id; ?>"><?php echo $title; ?></div>
 					</a>
 					
 					</div>
