@@ -1,4 +1,7 @@
 <?php
+/**
+ * My Shows page
+ */
 if(!is_user_logged_in()){ ?>
       <div class="not-login-wrpr">
         <h2>Please login to view your shows</h2>
