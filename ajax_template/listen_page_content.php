@@ -61,7 +61,7 @@
 									<div class="podcast-image">
 
 									'.display_lazy_loaded_podcast_image($post_id,array(200,200)).'</div>
-									<div class="podcast_title">'.substr(get_the_title($post_id), 0, 80).'</div>
+									<div class="podcast_title" title="'. substr(get_the_title($post_id), 0, 80) .'">'. substr(get_the_title($post_id), 0, 80).'</div>
 									</a>
 									</div>';
 									}
