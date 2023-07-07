@@ -1,4 +1,7 @@
 <?php
+/**
+ * Latest Episodes
+ */
 $prefix = $wpdb->prefix;
 $episodeTable = $prefix."episode"; 
 $postmetaTable = $prefix."postmeta";

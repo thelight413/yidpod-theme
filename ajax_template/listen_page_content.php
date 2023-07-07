@@ -1,4 +1,7 @@
 <?php
+/**
+ * Browse Shows page
+ */
  $getdata = $_COOKIE['recently_view'];
  
  $cat_option = get_option('yidpod_option_name');

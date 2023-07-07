@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * special categories
+ */
 global $wpdb;
 
 $options = explode(",",get_option("yidpod_option_name"));

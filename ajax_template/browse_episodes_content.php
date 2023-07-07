@@ -1,5 +1,8 @@
 <div class="browse-episodes"> 
 <?php
+/**
+ * Browse Episodes page
+ */
  $getdata = $_COOKIE['recently_view'];
 
  $cat_option = get_option('yidpod_e_option_name');

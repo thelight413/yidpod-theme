@@ -1,3 +1,9 @@
+ <?php
+ /**
+  * Search page content 
+  * and Search page and search-bar functionality
+  */
+ ?>
  <form action="" method="get" autocomplete="off">
 					<!-- <div class="input-wrpr">
                         <input type="search" name="search" id="search_podcast" placeholder="Type Here" value="<?= $_GET['search']?>"><span id="icon"><i class="fa fa-search" aria-hidden="true"></i></span><i class="fa fa-window-close custom_close" aria-hidden="true" style="display: none"></i>
