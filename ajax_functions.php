@@ -28,7 +28,7 @@ function get_cat_item(){
     $cat = $_POST['cat_name'];
 
      ob_start();
-     $shortcode_cat = '[yidpod_category category_slug="'.$cat.'"]';
+     $shortcode_cat = '[yidpod_category category_slug="'.$cat.'" horizontal="false"]';
 	 echo '<div class="one_cat">';
      echo do_shortcode($shortcode_cat);
 	 echo '</div>';
@@ -465,7 +465,7 @@ function get_browse_episodes_content_func(){
 
 	$response['result'] = $data;
 	wp_send_json( $response );
- die;
+ 	die;
 
 
 }
