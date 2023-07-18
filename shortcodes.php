@@ -244,7 +244,7 @@ LEFT JOIN wp_terms t
 function yidpod_category_shortcode($oldatts,$content,$tag){
 	ob_start();
 	$atts = shortcode_atts(array(
-		'horizontal' =>  true,
+		'horizontal' =>  "true",
 		'category_id'=>null,
 		'category_slug'=>null,
 		'class_id'=>null,
@@ -272,58 +272,19 @@ function yidpod_category_shortcode($oldatts,$content,$tag){
 		$per_cat = '.'.$class_per_cat;
 	}
 	//$args = array( 'posts_per_page' => $atts['limit'], 'offset'=> $atts['limit']*$atts['page'], 'cat' => $category->ID,'post_type'=>'podcasts' );
-$args = array( 'posts_per_page' => $atts['limit'], 'offset'=> $atts['limit']*$atts['page'], 'cat' => $category->ID,'post_type'=>'podcasts' );
+    $args = array( 'posts_per_page' => $atts['limit'], 'offset'=> $atts['limit']*$atts['page'], 'cat' => $category->ID,'post_type'=>'podcasts' );
     $podcasts = get_posts( $args );
 	// $podcasts = $query->posts;
 	$classes = "";
-	if($atts['horizontal']){
+	if($atts['horizontal'] == "true"){
 		$classes.= " horizontal";
 	}
 	?>
-	<style>
-		.category_page{
-			position: relative;
-		}
-		.podcasts{
-			display: flex;
-			flex-direction: column;
-			justify-content:flex-start;
-		}
-		.horizontal{
-			flex-direction: row;
-			overflow: auto;
-		}
-		.podcast_image{
-			width: 200px;
-		}
-		.podcast{
-          margin-right: 30px;
-		}
-		.yidpod_title{
-			font-size: 26px;
-			margin-bottom: 30px;
-            margin-top: 60px;
-		}
-		.left-arrow{
-			display:none;
-		}
-		.podcast_title {
-			max-width: 200px;
-			 overflow: hidden;
-			  text-overflow: ellipsis;
-			  white-space: initial;
-			  display: -webkit-box;
-			  -webkit-line-clamp: 2;
-			  -webkit-box-orient: vertical;
-			  
-		}
-
-	</style>
 	
 	<div class="category_page <?php echo $class_per_cat; ?>">
 		<?php 
 		$count = count($podcasts);
-		 if($count >5){
+		 if($count >=5 && $atts['horizontal'] == "true"){
 			 ?>
 			 <div class="arrows">
 				<div class="left-arrow">
@@ -346,7 +307,7 @@ $args = array( 'posts_per_page' => $atts['limit'], 'offset'=> $atts['limit']*$at
 							 <?php echo display_lazy_loaded_podcast_image($id,array(200,200)); ?>
 
 							 </div>
-							 <div class="podcast_title" title="<?php echo $podcast->post_title; ?>"><?php echo $podcast->post_title; ?></div>
+							 <div class="podcast_title" title="<?php echo get_the_title($id); ?>"><?php echo $podcast->post_title; ?></div>
 						 </a>
 			 		</div>
 			<?php  } ?>

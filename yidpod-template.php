@@ -31,7 +31,7 @@ get_template_part('player/header-player'); ?>
                 <div class="cs-featured-content">
 					<!--- inner 22-->					 
 					 <div class="inner__content">
-					 	<?php get_the_content() ?> 
+					 	<?php the_content() ?> 
 					</div>
 
 				</div>

@@ -28,7 +28,7 @@ foreach($podcasts as $podcast){
 				}
 
 $count = count($checkPodcastArraycount);
-	if($count >6){
+	if($count >= 5){
 	?>
 	<div class="category_page <?= $classId ?>">
 			<div class="arrows">
